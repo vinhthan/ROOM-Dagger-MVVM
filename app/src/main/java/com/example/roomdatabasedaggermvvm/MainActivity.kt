@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     private fun initViewModel(){
         viewModel = ViewModelProvider(this)[MainActivityViewModel::class.java]
 
-        viewModel.getAllUserObservable().observe(this, object : Observer<List<UserEntity>>{
+        viewModel.getAllUserObserver().observe(this, object : Observer<List<UserEntity>>{
             override fun onChanged(t: List<UserEntity>?) {
                 tv_result.text = ""
                 t?.forEach {

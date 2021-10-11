@@ -21,7 +21,7 @@ class MainActivityViewModel (application: Application): AndroidViewModel(applica
         getAllUser()
     }
 
-    fun getAllUserObservable(): MutableLiveData<List<UserEntity>>{
+    fun getAllUserObserver(): MutableLiveData<List<UserEntity>>{
         return allUserList
     }
 
